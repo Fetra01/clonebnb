@@ -16,7 +16,7 @@ class AdType extends AbstractType
 {
 
     /**
-     * Permet d'avoir la configuration de bbase d'un champ
+     * Permet d'avoir la configuration de base d'un champ
      *
      * @param string $label
      * @param string $placeholder
@@ -35,7 +35,7 @@ class AdType extends AbstractType
     {
         $builder
             ->add('title', TextType::class, $this->getConfiguration("Titre", "Tapez un super titre pour votre annonce !"))
-            ->add('slug', TextType::class,$this->getConfiguration("Chaine URL", "Adresse web (automatique)"))
+            //->add('slug', TextType::class,$this->getConfiguration("Chaine URL", "Adresse web (automatique)"))
             ->add('coverImage', UrlType::class, $this->getConfiguration("URL de l'image principale", "Donnez l'adresse d'une image qui donne vraiment envie de venir chez vous !"))
             ->add('introduction', TextType::class, $this->getConfiguration("Introduction", "Donnez une déscription globale de l'annonce"))
             ->add('Content', TextareaType::class, $this->getConfiguration("Description détaillée", "Tapez une description qui donne vraiment envie de venir chez vous !"))
