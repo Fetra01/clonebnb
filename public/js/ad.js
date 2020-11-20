@@ -8,7 +8,7 @@ $('#add-image').click(function(){
     $('#ad_images').append(tmpl);
 
     $('#widgets-counter').val(index+1);
-    //Je gère le bouton suprrimer
+    //Je gère le bouton suprimer
     handleDeleteButtons(); 
 });
 
